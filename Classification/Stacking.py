@@ -6,8 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error
 
-# 我不知道second_level_train_set是干嘛的；
-# 总体这个意思就是通过test_nfolds_sets算出每个不同分割的estimator，所predict出的值，最后mean每一列
+# 这个代码的理解需要看网上呢张图
 def get_stacking(clf, x_train, y_train, x_test, n_folds=10):
     # 这个函数是stacking的核心，使用交叉验证的方法得到次级训练集
     # 计算训练集和测试集的样本数
